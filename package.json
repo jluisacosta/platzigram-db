@@ -1,0 +1,26 @@
+{
+  "name": "platzigram-db",
+  "version": "1.0.0",
+  "description": "Platzigram Database Client",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard"
+  },
+  "standard":{
+    "parser":"babel-eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jluisacosta/platzigram-db.git"
+  },
+  "author": "J Luis Acosta <jluis.acosta@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jluisacosta/platzigram-db/issues"
+  },
+  "homepage": "https://github.com/jluisacosta/platzigram-db#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "standard": "^8.4.0"
+  }
+}
