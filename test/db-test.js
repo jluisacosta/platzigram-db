@@ -26,7 +26,6 @@ test.after.always('cleanup database', async t => {
 test('save image', async t => {
   t.is(typeof db.saveImage, 'function', 'saveImage is function')
 
-
   let image = {
     description: 'an #awesome picture with #tags #platzi',
     url: `https://platzigram.test/${uuid.v4()}.jpg`,
