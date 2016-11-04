@@ -5,7 +5,7 @@ const uuid = require('uuid-base62')
 const fixtures = {
   getImage () {
     return {
-      description: 'an #awesome picture with #tags #platzigram',
+      description: 'an #awesome picture with #tags #platzi',
       url: `http://platzigram.test/${uuid.v4()}.jpg`,
       likes: 0,
       liked: false,
@@ -14,4 +14,4 @@ const fixtures = {
   }
 }
 
-modules.exports = fixtures
+module.exports = fixtures
