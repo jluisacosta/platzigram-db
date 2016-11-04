@@ -264,3 +264,13 @@
 2016-11-03T20:27:59.564887000 442.369487s info: Table 32bf8d29-585d-45b9-9ec9-efaa42b6587c: Deleted the table.
 2016-11-03T20:27:59.583274000 442.387874s notice: Removing file /Users/JLuis/Development/Platzi/Curso Definitivo de JavaScript/platzigram-db/rethinkdb_data/ef39656d-81cc-42b4-921b-5f0b8cbde161
 2016-11-03T20:27:59.583286000 442.387886s info: Table ef39656d-81cc-42b4-921b-5f0b8cbde161: Deleted the table.
+2016-11-03T20:39:04.343327000 1107.163726s info: Table a27a28b5-2ec0-494f-a9e4-8acbac36e085: Starting a new Raft election for term 1.
+2016-11-03T20:39:04.343524000 1107.163923s info: Table a27a28b5-2ec0-494f-a9e4-8acbac36e085: Added replica on this server.
+2016-11-03T20:39:04.355938000 1107.176336s info: Table a27a28b5-2ec0-494f-a9e4-8acbac36e085: This server is Raft leader for term 1. Latest log index is 0.
+2016-11-03T20:39:04.990019000 1107.810466s info: Table b9c91b4a-42aa-4962-93ca-40020d24c7c0: Starting a new Raft election for term 1.
+2016-11-03T20:39:04.990362000 1107.810809s info: Table b9c91b4a-42aa-4962-93ca-40020d24c7c0: Added replica on this server.
+2016-11-03T20:39:05.001518000 1107.821964s info: Table b9c91b4a-42aa-4962-93ca-40020d24c7c0: This server is Raft leader for term 1. Latest log index is 0.
+2016-11-03T20:39:05.604717000 1108.425163s notice: Removing file /Users/JLuis/Development/Platzi/Curso Definitivo de JavaScript/platzigram-db/rethinkdb_data/a27a28b5-2ec0-494f-a9e4-8acbac36e085
+2016-11-03T20:39:05.604729000 1108.425174s info: Table a27a28b5-2ec0-494f-a9e4-8acbac36e085: Deleted the table.
+2016-11-03T20:39:05.617633000 1108.438079s notice: Removing file /Users/JLuis/Development/Platzi/Curso Definitivo de JavaScript/platzigram-db/rethinkdb_data/b9c91b4a-42aa-4962-93ca-40020d24c7c0
+2016-11-03T20:39:05.617644000 1108.438089s info: Table b9c91b4a-42aa-4962-93ca-40020d24c7c0: Deleted the table.
