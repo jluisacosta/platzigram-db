@@ -61,3 +61,12 @@ test('get image', async t => {
 
   t.deepEqual(created, result)
 })
+
+test('list all images', async t => {
+  let images = fixtures.getImages(3)
+  let saveImages = images.map(img => db.saveImage(img))
+  let created = await Promise.all(saveImages)
+  let result = await db.getImages()
+
+  t.is(created.length, result.length)
+})
