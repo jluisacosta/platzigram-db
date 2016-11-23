@@ -132,7 +132,7 @@ test('authenticate user', async t => {
 })
 
 test('list images user', async t => {
-  let db = t.db.context
+  let db = t.context.db
 
   t.is(typeof db.getImagesByUser, 'function', 'getImagesByUser is a function')
 
@@ -140,7 +140,7 @@ test('list images user', async t => {
   let userId = uuid.uuid()
   let random = Math.round(Math.random() * images.length)
 
-  let saveImage = []
+  let saveImages = []
   for (let i = 0; i < images.length; i++) {
     if (i < random) {
       images[i].userId = userId
