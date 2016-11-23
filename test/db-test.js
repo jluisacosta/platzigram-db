@@ -40,9 +40,9 @@ test('save image', async t => {
   t.is(created.likes, image.likes)
   t.is(created.liked, image.liked)
   t.deepEqual(created.tags, ['awesome', 'tags', 'platzi'])
-  t.is(created.user_id, image.user_id)
+  t.is(created.userId, image.userId)
   t.is(typeof created.id, 'string')
-  t.is(created.public_id, uuid.encode(created.id))
+  t.is(created.publicId, uuid.encode(created.id))
   t.truthy(created.createdAt)
 })
 
@@ -53,7 +53,7 @@ test('like image', async t => {
 
   let image = fixtures.getImage()
   let created = await db.saveImage(image)
-  let result = await db.likeImage(created.public_id)
+  let result = await db.likeImage(created.publicId)
 
   t.true(result.liked)
   t.is(result.likes, image.likes + 1)
@@ -66,7 +66,7 @@ test('get image', async t => {
 
   let image = fixtures.getImage()
   let created = await db.saveImage(image)
-  let result = await db.getImage(created.public_id)
+  let result = await db.getImage(created.publicId)
 
   t.deepEqual(created, result)
   t.throws(db.getImage('foo'), /not found/)
