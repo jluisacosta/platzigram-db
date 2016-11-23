@@ -130,3 +130,27 @@ test('authenticate user', async t => {
   let failure = await db.authenticate('foo', 'bar')
   t.false(failure)
 })
+
+test('list images user', async t => {
+  let db = t.db.context
+
+  t.is(typeof db.getImagesByUser, 'function', 'getImagesByUser is a function')
+
+  let images = fixtures.getImages(10)
+  let userId = uuid.uuid()
+  let random = Math.round(Math.random() * images.length)
+
+  let saveImage = []
+  for (let i = 0; i < images.length; i++) {
+    if (i < random) {
+      images[i].userId = userId
+    }
+
+    saveImages.push(db.saveImage(images[i]))
+  }
+
+  await Promise.all(saveImages)
+
+  let result = await db.getImagesByUser(userId)
+  t.is(result.length, random)
+})
